@@ -27,26 +27,30 @@ if __name__ == "__main__":
     print(MAIN_SEPARATOR)
 
     # TODO: Utiliser la méthode statique de PokemonArena pour faire combattre les deux pokémons (PokemonArena.fight(...)).
-
+    PokemonArena.fight(charmander, squirtle)
     # ================================
     # LE PASSAGE CHEZ L'INFIRMIÈRE JOY
     # ================================
     print(MAIN_SEPARATOR)
 
     # TODO: Soigner les deux pokémons en utilisant leur méthode de soin.
-
+    charmander.heal()
+    squirtle.heal()
     # ============================
     # LA MÉTAMORPHOSE DES POKÉMONS
     # ============================
     print(MAIN_SEPARATOR)
 
     # TODO: Faire évoluer Charmander en Charmeleon et Squirtle en Wartortle.
-
+    charmander.evolve()
+    squirtle.evolve()
     # TODO: Afficher la description de Charmeleon et Wartortle.
-
+    print(charmander)
+    print(squirtle)
     # ===============
     # LE COMBAT FINAL
     # ===============
     print(MAIN_SEPARATOR)
 
     # TODO: Utiliser de nouveau PokemonArena pour faire combattre les deux pokémons.
+    PokemonArena.fight(charmander, squirtle)
